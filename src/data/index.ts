@@ -18,11 +18,15 @@ export const navLinks: NavLink[] = [
 ];
 
 export const skills: Skill[] = [
+    {name: "HTML5 / CSS3", percentage: 98},
   { name: "React / Next.js", percentage: 95 },
   { name: "Node.js / Express", percentage: 90 },
   { name: "TypeScript", percentage: 88 },
   { name: "Tailwind CSS / SCSS", percentage: 96 },
-  { name: "Python / Django", percentage: 82 },
+  { name: "JavaScript", percentage: 92 },
+  { name: "jQuery", percentage: 85 },
+  { name: "ASP.NET Core MVC", percentage: 80 },
+  { name: "MongoDB / SQL", percentage: 89 },
   { name: "Figma / UI Design", percentage: 91 },
 ];
 
@@ -31,11 +35,13 @@ export const techIcons: TechIcon[] = [
   { emoji: "🟢", name: "Node.js" },
   { emoji: "🔷", name: "TypeScript" },
   { emoji: "🎨", name: "Figma" },
-  { emoji: "🐍", name: "Python" },
   { emoji: "🌊", name: "Tailwind" },
   { emoji: "🗄️", name: "MongoDB" },
-  { emoji: "🐳", name: "Docker" },
-  { emoji: "☁️", name: "AWS" },
+  { emoji: "🌐", name: "HTML5" },
+  { emoji: "🎨", name: "CSS3" },
+  { emoji: "⚡", name: "JavaScript" },
+  { emoji: "🧩", name: "jQuery" },
+  { emoji: "🖥️", name: "ASP.NET Core MVC" }
 ];
 
 export const services: Service[] = [
