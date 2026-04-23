@@ -18,7 +18,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const skills: Skill[] = [
-    {name: "HTML5 / CSS3", percentage: 98},
+  { name: "HTML5 / CSS3", percentage: 98 },
   { name: "React / Next.js", percentage: 95 },
   { name: "Node.js / Express", percentage: 90 },
   { name: "TypeScript", percentage: 88 },
@@ -41,7 +41,7 @@ export const techIcons: TechIcon[] = [
   { emoji: "🎨", name: "CSS3" },
   { emoji: "⚡", name: "JavaScript" },
   { emoji: "🧩", name: "jQuery" },
-  { emoji: "🖥️", name: "ASP.NET Core MVC" }
+  { emoji: "🖥️", name: "ASP.NET Core MVC" },
 ];
 
 export const services: Service[] = [
@@ -157,7 +157,7 @@ export const timeline: TimelineEntry[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    text: "Alex delivered an incredible website that exceeded our expectations. Communication was perfect, and he went above and beyond with extra features. Will definitely hire again!",
+    text: "Ibraheem delivered an incredible website that exceeded our expectations. Communication was perfect, and he went above and beyond with extra features. Will definitely hire again!",
     name: "Sarah Johnson",
     role: "CEO, Bloom Studio",
     avatar: "https://picsum.photos/seed/client1/40/40.jpg",
@@ -169,7 +169,7 @@ export const testimonials: Testimonial[] = [
     avatar: "https://picsum.photos/seed/client2/40/40.jpg",
   },
   {
-    text: "The Figma designs were stunning. Alex understood our brand perfectly and created a design system we still use today. Highly recommend for any design work!",
+    text: "The Figma designs were stunning. Ibraheem understood our brand perfectly and created a design system we still use today. Highly recommend for any design work!",
     name: "Emily Rodriguez",
     role: "Founder, Bright Brand",
     avatar: "https://picsum.photos/seed/client3/40/40.jpg",
