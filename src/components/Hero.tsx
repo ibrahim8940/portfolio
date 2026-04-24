@@ -31,7 +31,7 @@ export default function Hero() {
 
             <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-lg animate-fade-in-up delay-300">
               I help businesses build stunning websites, scalable web apps, and
-              memorable brand identities. 5+ years of experience with 200+ happy
+              memorable brand identities. 2+ years of experience with 100+ happy
               clients worldwide.
             </p>
 
@@ -53,7 +53,7 @@ export default function Hero() {
             {/* Stats */}
             <div className="flex gap-8 animate-fade-in-up delay-500">
               <div>
-                <div className="text-3xl font-bold text-white">200+</div>
+                <div className="text-3xl font-bold text-white">100+</div>
                 <div className="text-sm text-slate-500">Projects Done</div>
               </div>
               <div className="w-px bg-white/10" />
@@ -66,7 +66,7 @@ export default function Hero() {
               </div>
               <div className="w-px bg-white/10" />
               <div>
-                <div className="text-3xl font-bold text-white">5+</div>
+                <div className="text-3xl font-bold text-white">2+</div>
                 <div className="text-sm text-slate-500">Years Exp.</div>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Hero() {
                   <Code2 className="w-5 h-5 text-red-500" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold">Top Rated</div>
+                  <div className="text-sm font-semibold">New Seller</div>
                   <div className="text-xs text-slate-500">Fiverr Seller</div>
                 </div>
               </div>

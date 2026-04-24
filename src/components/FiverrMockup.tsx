@@ -48,20 +48,20 @@ export default function FiverrMockup() {
             <p className="text-slate-300 text-sm leading-relaxed whitespace-pre-line">
               {`🔥 I help businesses build stunning, high-performance websites and web applications that drive real results.
 
-✅ 200+ projects completed | ✅ 5.0 rating | ✅ 100% on-time delivery
+                ✅ 100+ projects completed | ✅ 5.0 rating | ✅ 100% on-time delivery
 
-💻 Expert in: React, Next.js, Node.js, TypeScript, Tailwind CSS, Figma
-🚀 Specialties: SaaS dashboards, e-commerce, landing pages, UI/UX design
+                💻 Expert in: React, Next.js, Node.js, TypeScript, Tailwind CSS, Figma
+                🚀 Specialties: ERP SYSTEM, dashboards, e-commerce, landing pages, UI/UX design
 
-📩 Message me — I respond within 1 hour!`}
+                📩 Message me — I respond within 1 hour!`}
             </p>
           </div>
 
           {/* Meta */}
           <div className="text-xs text-slate-500 flex flex-wrap items-center gap-4">
-            <span>From: United States</span>
+            <span>From: Pakistan</span>
             <span>•</span>
-            <span>Member since: Jan 2019</span>
+            <span>Member since: Jan 2021</span>
             <span>•</span>
             <span className="flex items-center gap-1">
               <div className="w-2 h-2 bg-green-500 rounded-full" /> Online now
