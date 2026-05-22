@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Send, Mail, MessageCircle } from "lucide-react";
 import { projectTypes, budgetRanges } from "../data";
+import emailjs from "@emailjs/browser";
 
 const LinkedInIcon = () => (
   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -19,8 +20,30 @@ export default function Contact({ onSubmit }: { onSubmit: () => void }) {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    onSubmit();
-    setForm({ name: "", email: "", projectType: "", budget: "", details: "" });
+
+    emailjs
+      .send(
+        "service_roxlw6j",
+        "template_pnmnipd",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          project_type: form.projectType,
+          budget: form.budget,
+          message: form.details,
+        },
+        "uv1p9Vezba5AnHvW2",
+      )
+      .then(() => {
+        onSubmit();
+        setForm({
+          name: "",
+          email: "",
+          projectType: "",
+          budget: "",
+          details: "",
+        });
+      });
   };
 
   const inputClass =
