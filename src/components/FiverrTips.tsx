@@ -47,7 +47,7 @@ export default function FiverrTips() {
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">
             Follow these proven steps to build a Fiverr portfolio that converts
-            visitors into buyers. These tips helped me reach Top Rated status.
+            visitors into buyers. These tips helped me reach New Saler status.
           </p>
         </div>
 

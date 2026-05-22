@@ -1,12 +1,14 @@
+import image from "../assets/ibraheem.jpeg";
+
 export default function FiverrMockup() {
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-0 -mt-8">
-      <div className="bg-[#0f172a] border border-white/10 rounded-2xl overflow-hidden">
-        {/* Green Banner */}
+      <div className="bg-[#0f172a] border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.01] transition-transform duration-300">
+        {/* Banner */}
         <div className="bg-gradient-to-r from-green-600 to-green-500 h-32 relative">
           <div className="absolute bottom-0 left-8 translate-y-1/2">
             <img
-              src="https://picsum.photos/seed/devprofile2024/120/120.jpg"
+              src={image}
               alt="Profile"
               className="w-24 h-24 rounded-full border-4 border-[#0f172a] object-cover"
             />
@@ -16,28 +18,35 @@ export default function FiverrMockup() {
         {/* Profile Info */}
         <div className="pt-16 px-8 pb-8">
           <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
+            {/* Left Info */}
             <div>
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="text-xl font-semibold">Ibraheem Khan</h3>
+
                 <span className="bg-green-600/20 text-green-400 text-xs font-semibold px-2 py-0.5 rounded">
-                  TOP RATED
+                  New Seller
                 </span>
               </div>
+
               <p className="text-slate-400 text-sm">
                 Full-Stack Developer & UI/UX Designer | React, Next.js, Node.js
               </p>
             </div>
-            <div className="flex gap-6 text-center">
+
+            {/* Stats */}
+            <div className="flex gap-6 text-center flex-wrap justify-end">
               <div>
-                <div className="text-lg font-bold">5.0</div>
-                <div className="text-xs text-slate-500">Rating</div>
+                <div className="text-lg font-bold">New</div>
+                <div className="text-xs text-slate-500">On Fiverr</div>
               </div>
+
               <div>
-                <div className="text-lg font-bold">213</div>
+                <div className="text-lg font-bold">0</div>
                 <div className="text-xs text-slate-500">Reviews</div>
               </div>
+
               <div>
-                <div className="text-lg font-bold">1hr</div>
+                <div className="text-lg font-bold">Fast</div>
                 <div className="text-xs text-slate-500">Response</div>
               </div>
             </div>
@@ -46,14 +55,12 @@ export default function FiverrMockup() {
           {/* Bio */}
           <div className="bg-[#020617] rounded-xl p-5 mb-4">
             <p className="text-slate-300 text-sm leading-relaxed whitespace-pre-line">
-              {`🔥 I help businesses build stunning, high-performance websites and web applications that drive real results.
+              {`🔥 I help businesses build modern, high-performance websites and web applications that deliver real results.
 
-                ✅ 100+ projects completed | ✅ 5.0 rating | ✅ 100% on-time delivery
+💻 Specialized in: React, Next.js, Node.js, TypeScript, Tailwind CSS, Figma
+🚀 Expertise: ERP systems, dashboards, e-commerce, landing pages, UI/UX design
 
-                💻 Expert in: React, Next.js, Node.js, TypeScript, Tailwind CSS, Figma
-                🚀 Specialties: ERP SYSTEM, dashboards, e-commerce, landing pages, UI/UX design
-
-                📩 Message me — I respond within 1 hour!`}
+📩 Open for new clients — I respond quickly and deliver clean, professional work.`}
             </p>
           </div>
 
@@ -61,10 +68,11 @@ export default function FiverrMockup() {
           <div className="text-xs text-slate-500 flex flex-wrap items-center gap-4">
             <span>From: Pakistan</span>
             <span>•</span>
-            <span>Member since: Jan 2021</span>
+            <span>Member since: 2024</span>
             <span>•</span>
             <span className="flex items-center gap-1">
-              <div className="w-2 h-2 bg-green-500 rounded-full" /> Online now
+              <div className="w-2 h-2 bg-green-500 rounded-full" />
+              Available for work
             </span>
           </div>
         </div>

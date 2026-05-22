@@ -1,3 +1,4 @@
+import profileImg from "../assets/ibraheem.jpeg";
 import { Send, Eye, Code2, CheckCircle, Star } from "lucide-react";
 
 export default function Hero() {
@@ -30,9 +31,9 @@ export default function Hero() {
             </p>
 
             <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-lg animate-fade-in-up delay-300">
-              I help businesses build stunning websites, scalable web apps, and
-              memorable brand identities. 2+ years of experience with 100+ happy
-              clients worldwide.
+              Full-Stack Developer building ERP systems, admin panels, and
+              scalable web applications. All projects are deployed with live
+              demos and real-world functionality.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-10 animate-fade-in-up delay-400">
@@ -58,7 +59,7 @@ export default function Hero() {
               </div>
               <div className="w-px bg-white/10" />
               <div>
-                <div className="text-3xl font-bold text-white">5.0</div>
+                <div className="text-3xl font-bold text-white">0</div>
                 <div className="text-sm text-slate-500 flex items-center gap-1">
                   <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
                   Fiverr Rating
@@ -75,11 +76,11 @@ export default function Hero() {
           {/* Right Image */}
           <div className="relative animate-slide-in-right delay-300">
             <img
-              src="https://picsum.photos/seed/devprofile2024/600/700.jpg"
+              src={profileImg}
               alt="Ibraheem Khan"
               className="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl shadow-black/50 relative z-10"
             />
-            {/* Floating Badge: Top Rated */}
+            {/* Floating Badge: New Saler */}
             <div className="absolute -left-6 top-1/4 bg-[#0f172a] border border-white/10 rounded-2xl p-4 shadow-2xl animate-float z-20">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-red-600/20 rounded-lg flex items-center justify-center">

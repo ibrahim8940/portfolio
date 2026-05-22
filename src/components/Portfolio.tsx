@@ -52,15 +52,19 @@ export default function Portfolio() {
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((project) => (
-            <div
+            <a
               key={project.title}
-              className="portfolio-card relative overflow-hidden rounded-2xl cursor-pointer animate-scale-in"
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="portfolio-card relative overflow-hidden rounded-2xl cursor-pointer block animate-scale-in"
             >
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-72 object-cover transition-transform duration-500"
               />
+
               <div className="card-content absolute bottom-0 left-0 right-0 p-6">
                 <span className="text-xs font-semibold text-red-400 uppercase tracking-wide">
                   {project.category === "web"
@@ -69,10 +73,12 @@ export default function Portfolio() {
                       ? "Web App"
                       : "UI/UX"}
                 </span>
+
                 <h3 className="text-lg font-semibold mt-1">{project.title}</h3>
+
                 <p className="text-sm text-slate-400 mt-1">{project.tech}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

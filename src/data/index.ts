@@ -5,7 +5,6 @@ import type {
   Service,
   Project,
   TimelineEntry,
-  Testimonial,
   Tip,
 } from "../../src/types/index";
 
@@ -20,12 +19,14 @@ export const navLinks: NavLink[] = [
 export const skills: Skill[] = [
   { name: "HTML5 / CSS3", percentage: 98 },
   { name: "React / Next.js", percentage: 95 },
-  { name: "Node.js / Express", percentage: 90 },
+  { name: "Node.js / NestJS", percentage: 90 },
   { name: "TypeScript", percentage: 88 },
   { name: "Tailwind CSS / SCSS", percentage: 96 },
   { name: "JavaScript", percentage: 92 },
   { name: "jQuery", percentage: 85 },
-  { name: "ASP.NET Core MVC", percentage: 80 },
+  { name: "NestJS", percentage: 88 },
+  { name: "SQL Server", percentage: 90 },
+  { name: "Material UI", percentage: 92 },
   { name: "MongoDB / SQL", percentage: 89 },
   { name: "Figma / UI Design", percentage: 91 },
 ];
@@ -41,10 +42,26 @@ export const techIcons: TechIcon[] = [
   { emoji: "🎨", name: "CSS3" },
   { emoji: "⚡", name: "JavaScript" },
   { emoji: "🧩", name: "jQuery" },
-  { emoji: "🖥️", name: "ASP.NET Core MVC" },
+  { emoji: "⚙️", name: "NestJS" },
+  { emoji: "🗄️", name: "SQL Server" },
+  { emoji: "🎨", name: "Material UI" },
 ];
 
 export const services: Service[] = [
+  {
+    icon: "database",
+    title: "ERP & Admin Panel Development",
+    description:
+      "Modern ERP systems with dynamic forms, RBAC, dashboards, generic CRUD architecture, and scalable business modules.",
+    price: 400,
+  },
+  {
+    icon: "settings",
+    title: "Dynamic Form & CRUD Systems",
+    description:
+      "Reusable dynamic form builders and generic CRUD systems using React, Next.js, NestJS, and SQL Server.",
+    price: 250,
+  },
   {
     icon: "layout",
     title: "Website Design & Development",
@@ -91,88 +108,98 @@ export const services: Service[] = [
 
 export const projects: Project[] = [
   {
-    title: "SaaS Landing Page",
+    title: "React TypeScript Starter Template",
     category: "web",
-    tech: "React + Tailwind CSS",
-    image: "https://picsum.photos/seed/project-saas/600/400.jpg",
+    tech: "React + TypeScript + Tailwind CSS",
+    image:
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "https://react-ts-tailwind-starter-template.netlify.app/",
   },
+
   {
-    title: "E-Commerce Platform",
+    title: "Modern E-Commerce Application",
     category: "app",
-    tech: "Next.js + Stripe + MongoDB",
-    image: "https://picsum.photos/seed/project-ecom/600/400.jpg",
+    tech: "React + Firebase + Tailwind CSS",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "https://e-commerce-app-f5e073.netlify.app/",
   },
+
   {
-    title: "Banking App Design",
-    category: "design",
-    tech: "Figma + Prototype",
-    image: "https://picsum.photos/seed/project-ui/600/400.jpg",
-  },
-  {
-    title: "Restaurant Website",
-    category: "web",
-    tech: "HTML + CSS + JavaScript",
-    image: "https://picsum.photos/seed/project-restaurant/600/400.jpg",
-  },
-  {
-    title: "CRM Dashboard",
+    title: "ERP Management System",
     category: "app",
-    tech: "React + Node.js + PostgreSQL",
-    image: "https://picsum.photos/seed/project-crm/600/400.jpg",
+    tech: "Next.js + NestJS + SQL Server",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "#",
   },
+
   {
-    title: "Creative Portfolio",
-    category: "design",
-    tech: "Figma + Webflow",
-    image: "https://picsum.photos/seed/project-portfolio/600/400.jpg",
+    title: "Dynamic Form Builder",
+    category: "app",
+    tech: "React + Material UI + Generic CRUD",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
+    liveUrl: "#",
   },
 ];
 
 export const timeline: TimelineEntry[] = [
   {
-    period: "2022 — Present",
-    title: "Top Rated Seller — Fiverr",
+    period: "2024 — Present",
+    title: "Full Stack Developer — Fiverr",
     description:
-      "Delivered 150+ projects in web development and UI/UX design. Maintained 5.0 rating with 100% on-time delivery.",
+      "Building modern web applications, ERP systems, admin panels, and scalable business solutions using React, Next.js, NestJS, and SQL Server.",
   },
   {
-    period: "2021 — 2022",
-    title: "Senior Developer — TechCorp",
+    period: "2023 — Present",
+    title: "Independent ERP System Development",
     description:
-      "Led a team of 5 developers building enterprise SaaS products. Improved app performance by 40%.",
+      "Developing a large-scale ERP platform with dynamic forms, reusable CRUD architecture, RBAC, and enterprise business modules.",
   },
   {
-    period: "2020 — 2021",
-    title: "Freelance Developer — Upwork",
+    period: "2022 — 2023",
+    title: "Frontend & Backend Development Practice",
     description:
-      "Built 50+ websites for small businesses and startups. Earned Top Rated Plus badge.",
-  },
-  {
-    period: "2019 — 2020",
-    title: "Junior Developer — StartupX",
-    description:
-      "Built front-end interfaces and REST APIs. Collaborated with design team on user experience.",
+      "Focused on mastering React, Next.js, Node.js, SQL Server, REST APIs, authentication systems, and responsive UI development.",
   },
 ];
 
-export const testimonials: Testimonial[] = [
+export const testimonials = [
   {
-    text: "Ibraheem delivered an incredible website that exceeded our expectations. Communication was perfect, and he went above and beyond with extra features. Will definitely hire again!",
-    name: "Sarah Johnson",
-    role: "CEO, Bloom Studio",
+    text: "Great developer, delivered on time with clean code.",
+    name: "Client 1",
+    role: "CEO, Company",
     avatar: "https://picsum.photos/seed/client1/40/40.jpg",
   },
   {
-    text: "Best Fiverr seller I've worked with. The React dashboard was clean, fast, and exactly what we needed. Delivered 2 days early with full documentation.",
-    name: "Mike Chen",
-    role: "CTO, DataFlow Inc",
+    text: "Very professional and skilled in React and Node.js.",
+    name: "Client 2",
+    role: "Founder, Startup",
     avatar: "https://picsum.photos/seed/client2/40/40.jpg",
   },
+];
+
+export const highlights = [
   {
-    text: "The Figma designs were stunning. Ibraheem understood our brand perfectly and created a design system we still use today. Highly recommend for any design work!",
-    name: "Emily Rodriguez",
-    role: "Founder, Bright Brand",
-    avatar: "https://picsum.photos/seed/client3/40/40.jpg",
+    title: "Enterprise ERP Architecture",
+    description:
+      "Building scalable ERP systems with reusable modules, RBAC, and dynamic business workflows.",
+  },
+  {
+    title: "Dynamic Form Engine",
+    description:
+      "Database-driven dynamic forms with reusable validations, layouts, and dropdown management.",
+  },
+  {
+    title: "Generic CRUD System",
+    description:
+      "Reusable frontend and backend CRUD architecture for rapid enterprise module development.",
+  },
+  {
+    title: "Modern Full Stack Development",
+    description:
+      "Developing high-performance applications using React, Next.js, NestJS, and SQL Server.",
   },
 ];
 

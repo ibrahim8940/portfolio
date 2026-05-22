@@ -3,10 +3,10 @@ import { Check, ArrowRight } from "lucide-react";
 const strengths = [
   "Clean Code",
   "Responsive Design",
+  "Scalable Architecture",
   "Fast Delivery",
-  "24/7 Support",
   "SEO Optimized",
-  "Unlimited Revisions",
+  "Enterprise Solutions",
 ];
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
               className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
             />
             <div className="absolute -bottom-6 -right-6 bg-red-600 rounded-2xl p-6 text-center">
-              <div className="text-4xl font-bold">5+</div>
+              <div className="text-4xl font-bold">2+</div>
               <div className="text-sm text-red-100">
                 Years of
                 <br />
@@ -41,17 +41,17 @@ export default function About() {
               <span className="gradient-text">Digital Reality</span>
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed mb-6">
-              I'm a passionate full-stack developer and designer based in New
-              York. I specialize in creating modern, responsive websites and web
-              applications that not only look great but also drive real business
-              results.
+              I'm a passionate full-stack developer based in Pakistan,
+              specializing in modern, scalable, and high-performance web
+              applications. I focus on creating clean UI/UX experiences combined
+              with secure and maintainable backend architectures.
             </p>
+
             <p className="text-slate-400 text-lg leading-relaxed mb-8">
-              On Fiverr, I've maintained a{" "}
-              <strong className="text-white">Top Rated Seller</strong> badge for
-              2+ years, completing 200+ orders with a perfect 5.0 rating. I
-              bring the same level of professionalism to every project, whether
-              it's a $50 landing page or a $5,000 web application.
+              My expertise includes React, Next.js, Node.js, NestJS, SQL Server,
+              Material-UI, and Tailwind CSS. I also build dynamic ERP and
+              business management systems using reusable CRUD architectures,
+              database-driven forms, and scalable enterprise solutions.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -67,7 +67,7 @@ export default function About() {
               href="#contact"
               className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-medium transition-colors"
             >
-              Let's work together <ArrowRight className="w-4 h-4" />
+              Let's Build Something Great <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>

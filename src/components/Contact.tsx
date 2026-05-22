@@ -54,7 +54,7 @@ export default function Contact({ onSubmit }: { onSubmit: () => void }) {
                 <input
                   type="text"
                   required
-                  placeholder="John Doe"
+                  placeholder="Enter your name"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className={inputClass}
@@ -67,7 +67,7 @@ export default function Contact({ onSubmit }: { onSubmit: () => void }) {
                 <input
                   type="email"
                   required
-                  placeholder="john@example.com"
+                  placeholder="Enter your email"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className={inputClass}
@@ -138,18 +138,33 @@ export default function Contact({ onSubmit }: { onSubmit: () => void }) {
           {/* Contact Links */}
           <div className="grid md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-white/5">
             {[
-              { icon: Mail, label: "www.linkedin.com/in/ibrahim-khan-4b0847233" },
-              { icon: MessageCircle, label: "Fiverr Inbox" },
-              { icon: LinkedInIcon, label: "LinkedIn" },
-            ].map(({ icon: Icon, label }) => (
+              {
+                icon: Mail,
+                label: "Email",
+                href: "https://ibraheem8940@gmail.com",
+              },
+              {
+                icon: MessageCircle,
+                label: "Fiverr Inbox",
+                href: "https://www.fiverr.com/ibraheem_khan40",
+              },
+              {
+                icon: LinkedInIcon,
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/ibrahim-khan-4b0847233",
+              },
+            ].map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
               >
                 <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
                   <Icon />
                 </div>
+
                 <span className="text-sm">{label}</span>
               </a>
             ))}

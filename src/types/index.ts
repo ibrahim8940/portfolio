@@ -25,6 +25,7 @@ export interface Project {
   category: "web" | "app" | "design";
   tech: string;
   image: string;
+  liveUrl?: string;
 }
 
 export interface TimelineEntry {
